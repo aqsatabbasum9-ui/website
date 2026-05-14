@@ -1,5 +1,5 @@
 "use client";
-
+import { FaDownload } from "react-icons/fa";
 import PageWrapper from "@/components/PageWrapper";
 import Image from "next/image";
 
@@ -32,7 +32,19 @@ export default function HomePage() {
             I would appreciate the opportunity to contribute to your team and grow as a developer.
 
           </p>
+
+
+           <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 mt-6 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
+          >
+            <FaDownload />
+            Download Resume
+          </a>
         </div>
+              
 
         {/* Right Side */}
         <div className="flex justify-center">
