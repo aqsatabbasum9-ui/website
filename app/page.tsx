@@ -17,7 +17,7 @@ export default function HomePage() {
             Hi, I’m Aqsa Tabbasum
           </h1>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-purple-700">
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-700">
             Software Engineer | Mobile App Developer | Web Developer
           </h2>
 
@@ -38,7 +38,7 @@ export default function HomePage() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 mt-6 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
+            className="inline-flex items-center gap-3 mt-6 bg-gradient-to-r from-slate-800 to-gray-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
           >
             <FaDownload />
             Download Resume

@@ -16,7 +16,7 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7 }}
-      className="w-full bg-gradient-to-r from-purple-700 via-pink-600 to-blue-600 shadow-xl sticky top-0 z-50"
+      className="bg-gradient-to-r from-slate-900 via-gray-800 to-slate-700 shadow-xl"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-5 flex flex-col md:flex-row justify-between items-center gap-4">
 

@@ -15,8 +15,9 @@ export default function EducationPage() {
   return (
     <PageWrapper>
 <section
-      className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-pink-100 px-6 py-16"
-    >
+  className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-gray-100 px-6 pt-28 pb-16"
+>
+        <div className="max-w-7xl mx-auto space-y-16"></div>
       <div className="max-w-7xl mx-auto space-y-16">
 
         {/* Education Section */}
@@ -28,7 +29,7 @@ export default function EducationPage() {
           <div className="grid md:grid-cols-2 gap-8">
 
             <div className="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] hover:scale-[1.02] transition duration-300">
-              <h2 className="text-2xl font-bold text-purple-700">
+              <h2 className="text-2xl font-bold text-slate-800">
                 BS Software Engineering
               </h2>
               <p className="text-gray-700 mt-2">
@@ -47,7 +48,7 @@ export default function EducationPage() {
             </div>
 
             <div className="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] hover:scale-[1.02] transition duration-300">
-              <h2 className="text-2xl font-bold text-purple-700">
+              <h2 className="text-2xl font-bold text-slate-800">
                 Intermediate (FSc)
               </h2>
               <p className="text-gray-700 mt-2">
@@ -90,7 +91,7 @@ export default function EducationPage() {
                 key={index}
                 className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center hover:scale-105 transition"
               >
-                <div className="text-purple-600 mb-4">
+                <div className="text-gray-700 mb-4">
                   {skill.icon}
                 </div>
                 <p className="font-semibold text-gray-700">

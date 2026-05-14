@@ -33,14 +33,14 @@ export default function ProjectsPage() {
   return (
     <PageWrapper>
 <section
-      className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-pink-100 px-6 py-16"
+      className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-gray-100 px-6 py-16"
     >
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-800 mb-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
           Projects
         </h1>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {projects.map((project, index) => (
             <div
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
               </div>
 
               <div className="p-6 space-y-4">
-                <h2 className="text-2xl font-bold text-purple-700">
+                <h2 className="text-2xl font-bold text-slate-800">
                   {project.title}
                 </h2>
 
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-5 py-2 rounded-xl bg-purple-600 text-white font-medium hover:scale-105 transition"
+                            className="px-5 py-2 rounded-xl bg-slate-800 text-white font-medium hover:scale-105 transition"
                         >
                             View Code
                         </a>
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
                             href={project.demo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-5 py-2 rounded-xl border border-purple-600 text-purple-700 font-medium hover:scale-105 transition"
+                            className="px-5 py-2 rounded-xl border border-slate-600 text-slate-800 font-medium hover:scale-105 transition"
                         >
                             Live Demo
                         </a>

@@ -32,9 +32,9 @@ export default function SkillsPage() {
   return (
     <PageWrapper>
 <section
-      className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-pink-100 px-6 py-16"
-    >
-      <div className="max-w-7xl mx-auto">
+  className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-gray-100 px-6 flex items-center"
+>
+     <div className="max-w-7xl mx-auto w-full py-15">
 
         <h1 className="text-4xl font-bold text-gray-800 mb-12">
           My Skills
@@ -47,7 +47,7 @@ export default function SkillsPage() {
                 key={index}
                 className="bg-white/80 backdrop-blur-md rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-5 flex flex-col items-center justify-center"
                 >
-                <div className="text-purple-600 mb-3">
+                <div className="text-gray-700 mb-3">
                     {skill.icon}
                 </div>
 
@@ -74,7 +74,7 @@ export default function SkillsPage() {
                     key={index}
                     className="min-w-[240px] bg-white/80 backdrop-blur-md rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-8 flex flex-col items-center justify-center hover:scale-105 transition duration-300"
                 >
-                    <div className="text-purple-600 mb-4">
+                    <div className="text-gray-700 mb-4">
                     {skill.icon}
                     </div>
 
