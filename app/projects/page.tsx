@@ -10,6 +10,8 @@ const projects = [
     description:
       "A professional personal portfolio website built using Next.js with smooth animations, responsive design, and modern UI/UX.",
     tech: "Next.js, Tailwind CSS, Framer Motion",
+    github: "https://github.com/aqsatabbasum9-ui/website",
+    demo: "https://website-pink-two-crbm40h6lu.vercel.app/",
   },
   {
     title: "Biuld Smart Choice",
@@ -70,6 +72,32 @@ export default function ProjectsPage() {
                 <p className="text-sm text-gray-500">
                   {project.tech}
                 </p>
+                <div className="p-6 space-y-4">
+                    
+
+                    
+                    {project.github && project.demo && (
+                        <div className="flex gap-4 pt-4">
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-5 py-2 rounded-xl bg-purple-600 text-white font-medium hover:scale-105 transition"
+                        >
+                            View Code
+                        </a>
+
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-5 py-2 rounded-xl border border-purple-600 text-purple-700 font-medium hover:scale-105 transition"
+                        >
+                            Live Demo
+                        </a>
+                        </div>
+                    )}
+                    </div>
               </div>
             </div>
           ))}

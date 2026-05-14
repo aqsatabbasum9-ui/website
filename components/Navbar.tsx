@@ -18,13 +18,13 @@ export default function Navbar() {
       transition={{ duration: 0.7 }}
       className="w-full bg-gradient-to-r from-purple-700 via-pink-600 to-blue-600 shadow-xl sticky top-0 z-50"
     >
-      <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-5 flex flex-col md:flex-row justify-between items-center gap-4">
 
         <h1 className="text-white text-3xl font-bold tracking-wide">
           Portfolio
         </h1>
 
-        <div className="flex gap-10 text-white font-semibold text-lg">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-10 text-white font-semibold text-sm md:text-lg">
 
           {navLinks.map((link, index) => (
             <Link
