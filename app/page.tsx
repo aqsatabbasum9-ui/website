@@ -7,10 +7,7 @@ export default function HomePage() {
   return (
     <PageWrapper>
 <section
-      initial={{ x: 150, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="min-h-screen bg-gradient-to-br from-[#f8f5ff] via-[#eef7ff] to-[#fff4fb] px-6 py-20"
+      className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-pink-100 px-6 py-16"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 

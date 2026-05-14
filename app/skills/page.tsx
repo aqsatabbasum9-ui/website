@@ -32,10 +32,7 @@ export default function SkillsPage() {
   return (
     <PageWrapper>
 <section
-      initial={{ x: 150, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="min-h-screen bg-gradient-to-br from-pink-100 via-white to-blue-100 px-6 py-16 overflow-hidden"
+      className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-pink-100 px-6 py-16"
     >
       <div className="max-w-7xl mx-auto">
 
