@@ -40,30 +40,51 @@ export default function SkillsPage() {
           My Skills
         </h1>
 
-        <motion.div
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          className="flex gap-8 w-max"
-        >
-          {[...skills, ...skills].map((skill, index) => (
-            <div
-              key={index}
-              className="min-w-[240px] bg-white/80 backdrop-blur-md rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-8 flex flex-col items-center justify-center hover:scale-105 transition duration-300"
-            >
-              <div className="text-purple-600 mb-4">
-                {skill.icon}
-              </div>
+       {/* Mobile View */}
+            <div className="grid grid-cols-2 gap-4 md:hidden">
+            {skills.map((skill, index) => (
+                <div
+                key={index}
+                className="bg-white/80 backdrop-blur-md rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-5 flex flex-col items-center justify-center"
+                >
+                <div className="text-purple-600 mb-3">
+                    {skill.icon}
+                </div>
 
-              <p className="text-lg font-semibold text-gray-700">
-                {skill.name}
-              </p>
+                <p className="text-sm font-semibold text-gray-700 text-center">
+                    {skill.name}
+                </p>
+                </div>
+            ))}
             </div>
-          ))}
-        </motion.div>
+
+            {/* Desktop View */}
+            <div className="hidden md:block overflow-hidden">
+            <motion.div
+                animate={{ x: ["0%", "-50%"] }}
+                transition={{
+                duration: 20,
+                repeat: Infinity,
+                ease: "linear",
+                }}
+                className="flex gap-8 w-max"
+            >
+                {[...skills, ...skills].map((skill, index) => (
+                <div
+                    key={index}
+                    className="min-w-[240px] bg-white/80 backdrop-blur-md rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-8 flex flex-col items-center justify-center hover:scale-105 transition duration-300"
+                >
+                    <div className="text-purple-600 mb-4">
+                    {skill.icon}
+                    </div>
+
+                    <p className="text-lg font-semibold text-gray-700">
+                    {skill.name}
+                    </p>
+                </div>
+                ))}
+            </motion.div>
+            </div>
 
       </div>
     </section>
