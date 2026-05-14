@@ -13,11 +13,11 @@ export default function HomePage() {
 
         {/* Left Side */}
         <div className="space-y-6">
-          <h1 className="text-5xl font-bold text-gray-800">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
             Hi, I’m Aqsa Tabbasum
           </h1>
 
-          <h2 className="text-2xl font-semibold text-purple-700">
+          <h2 className="text-xl md:text-2xl font-semibold text-purple-700">
             Software Engineer | Mobile App Developer | Web Developer
           </h2>
 
@@ -47,14 +47,13 @@ export default function HomePage() {
               
 
         {/* Right Side */}
-        <div className="flex justify-center">
-          <div className="w-[380px] h-[380px] rounded-full overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.15)] border-8 border-white backdrop-blur-lg">
-            <Image
+        <div className="flex justify-center items-center mt-8 md:mt-0">
+            <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.15)] border-8 border-white bg-white">    <Image
               src="/profile.jpg"
               alt="Profile"
               width={350}
               height={350}
-              className="object-cover w-full h-full"
+              className="object-cover object-top w-full h-full"
             />
           </div>
         </div>
