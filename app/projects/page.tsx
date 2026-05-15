@@ -33,7 +33,7 @@ export default function ProjectsPage() {
   return (
     <PageWrapper>
 <section
-      className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-gray-100 px-6 py-16"
+      className="min-h-screen bg-gradient-to-br from-slate-100 via-blue to-navy-100 px-6 py-16"
     >
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">

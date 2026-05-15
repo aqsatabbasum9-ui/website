@@ -32,7 +32,7 @@ export default function SkillsPage() {
   return (
     <PageWrapper>
 <section
-  className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-gray-100 px-6 flex items-center"
+  className="min-h-screen bg-gradient-to-br from-slate-100 via-blue to-navy-100 px-6 flex items-center"
 >
      <div className="max-w-7xl mx-auto w-full py-15">
 
