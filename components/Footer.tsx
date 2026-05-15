@@ -19,7 +19,12 @@ export default function Footer() {
         <div className="flex flex-wrap items-center gap-3 text-sm md:text-base">
           <FaEnvelope />
           <span>:</span>
-          <p>aqsatabbasum9@gmail.com</p>
+          <a
+            href="mailto:aqsatabbasum9@gmail.com?subject=Portfolio Inquiry"
+            className="hover:text-gray-300 transition duration-300"
+            >
+            : aqsatabbasum9@gmail.com
+            </a>
         </div>
 
         <div className="flex flex-wrap items-center gap-3 text-sm md:text-base">
