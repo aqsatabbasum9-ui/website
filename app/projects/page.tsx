@@ -15,14 +15,14 @@ const projects = [
   },
   {
     title: "Biuld Smart Choice",
-    image: "/project2.jpeg",
+    image: "/project2.png",
     description:
       "A full-featured mobile application developed using Flutter with Firebase backend integration and beautiful user interface. It is a construction app that provides users construction material with rates , blue prints and packages recommended by AI. ",
     tech: "Flutter, Firebase, Dart , MySql",
   },
   {
     title: "Management System",
-    image: "/project3.jpeg",
+    image: "/project3.png",
     description:
       "Developed a Notes Mobile App using Java Organized notes by categories for easy access Implemented add, update, and delete functionality Designed a simple and user-friendly interface",
     tech: "Java, MySQL, JDBC",
